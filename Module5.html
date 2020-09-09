@@ -6,7 +6,9 @@
     <title>Module 5</title>
 </head>
 <body>
-    <form method="Post" action="process.php">
+    <form method="post" action="process.php" id="numform" 
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)>
+        
         <input type="text" name="query">
         <br>
         
@@ -48,9 +50,20 @@
     </select>
         <br> <br>
 
-        <textarea rows="15" cols="100">
-            Here is some default txt
+        <textarea rows="4" cols="20">
+          
         </textarea> 
+
+        <br> <br>
+        
+        0
+        <input type="range" id="a" name="a" value="50">
+        100
+        +
+        <input type="number" id="b" name="b" value="50"> =
+        <output form="numform" name="x" for="a b"></output>
+
+        <br> <br>
 
 
         <button>Click here!</button>
